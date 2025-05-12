@@ -21,6 +21,9 @@ jobs:
           distribution: 'temurin'
           java-version: 17
 
+      - name: Make Maven wrapper executable
+        run: chmod +x mvnw
+
       - name: Cache SonarCloud packages
         uses: actions/cache@v4
         with:
